@@ -16,7 +16,7 @@ namespace cis237assignment4
         //Protected constant for the cost per ship. Children can access this too.
         protected decimal COST_PER_SHIP = 45.00m;
 
-        //Constructor that uses the Base Constuctor to do most of the work.
+        //Constructor that uses the Base Constructor to do most of the work.
         public AstromechDroid(string Material, string Model, string Color,
             bool HasToolbox, bool HasComputerConnection, bool HasArm, bool HasFireExtinquisher, int NumberOfShips) :
             base(Material, Model, Color, HasToolbox, HasComputerConnection, HasArm)
@@ -41,14 +41,14 @@ namespace cis237assignment4
             return optionsCost;
         }
 
-        //Protected virtual method that can be overriden in child classes.
-        //Caclulates the cost of ships.
+        //Protected virtual method that can be overridden in child classes.
+        //Calculates the cost of ships.
         protected virtual decimal CalculateCostOfShips()
         {
             return COST_PER_SHIP * numberOfShips;
         }
 
-        //Overriden method to calculate the total cost. Uses work from the base class to achive the answer.
+        //Overridden method to calculate the total cost. Uses work from the base class to achieve the answer.
         public override void CalculateTotalCost()
         {
             this.CalculateBaseCost();
@@ -56,7 +56,7 @@ namespace cis237assignment4
             this.totalCost = this.baseCost + this.CalculateCostOfOptions() + this.CalculateCostOfShips();
         }
 
-        //Overriden ToString method to output the information for this droid. Uses work done in the base class
+        //Overridden ToString method to output the information for this droid. Uses work done in the base class
         public override string ToString()
         {
             return base.ToString() +

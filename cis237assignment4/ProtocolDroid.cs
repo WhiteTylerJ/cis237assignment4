@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cis237assignment4
 {
-    //Class that is instantiable. It inherits from the abstract droid class
+    //Class that is instantiate. It inherits from the abstract droid class
     class ProtocolDroid : Droid
     {
         //Private variables unique to this class
@@ -20,7 +20,7 @@ namespace cis237assignment4
             this.numberOfLanguages = NumberOfLanguages;
         }
 
-        //Overriden abstract method from the droid class.
+        //Overridden abstract method from the droid class.
         //It calculates the total cost using the baseCost method.
         public override void CalculateTotalCost()
         {

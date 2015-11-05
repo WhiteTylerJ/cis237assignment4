@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cis237assignment4
 {
-    //Derived from the abstract class Droid. Can be instanciated
+    //Derived from the abstract class Droid. Can be instantiated
     class UtilityDroid : Droid
     {
         //Class level variables that can be used in this class, or any children of this class

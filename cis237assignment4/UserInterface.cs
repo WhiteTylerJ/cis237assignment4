@@ -31,7 +31,9 @@ namespace cis237assignment4
             Console.WriteLine("What would you like to do?");
             Console.WriteLine("1. Add a new droid to the system");
             Console.WriteLine("2. Print the list of droids out");
-            Console.WriteLine("3. Exit the program");
+            Console.WriteLine("3. Sort droids by model");
+            Console.WriteLine("4. Sort droids by cost");
+            Console.WriteLine("5. Exit the program");
         }
 
         //Method to get a menu choice
@@ -157,7 +159,7 @@ namespace cis237assignment4
             Console.WriteLine();
             bool option1 = this.displayAndGetOption("Does the droid have a trash compactor?");
             Console.WriteLine();
-            bool option2 = this.displayAndGetOption("Does the droid have a vaccum?");
+            bool option2 = this.displayAndGetOption("Does the droid have a vacuum?");
 
             bool[] returnArray = { option1, option2 };
             return returnArray;
@@ -215,7 +217,7 @@ namespace cis237assignment4
             //get the users choice
             int choice = this.GetMenuChoice();
 
-            //while the chioce is not valid, wait until there is a valid one
+            //while the choice is not valid, wait until there is a valid one
             while (choice < 0 || choice > 4)
             {
                 this.displayMaterialSelection();
@@ -257,7 +259,7 @@ namespace cis237assignment4
                 choice = this.GetMenuChoice();
             }
 
-            //Based on the choice, call the next set of crieteria that needs to be determined
+            //Based on the choice, call the next set of criteria that needs to be determined
             switch (choice)
             {
                 case 1:
@@ -278,7 +280,7 @@ namespace cis237assignment4
             }
         }
 
-        //Method to choose the number of langages that a droid knows. It accepts the values that were determined
+        //Method to choose the number of languages that a droid knows. It accepts the values that were determined
         //in the past methods. This method will also add a droid based on the collected information.
         private void chooseNumberOfLanguages(string Color, string Material, string Model)
         {

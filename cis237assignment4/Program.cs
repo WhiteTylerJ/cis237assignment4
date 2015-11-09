@@ -52,6 +52,13 @@ namespace cis237assignment4
                     case 2:
                         userInterface.PrintDroidList();
                         break;
+                    //Sort droids by model
+                    case 3:
+                        break;
+                    //sort droids by cost
+                    case 4:                                            
+                        break;
+                    
                 }
                 //Re-display the menu, and re-prompt for the choice
                 userInterface.DisplayMainMenu();
